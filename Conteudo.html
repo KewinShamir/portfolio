@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Kewin Shamir | Portfólio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container_header">
+            <div class="logo">
+                <a href="#">Kewin Shamir</a>
+            </div>
+            <nav class="menu_header">
+                <button class="button_header" aria-expanded="false" aria-controls="menu" aria-haspopup="true"
+                    aria-label="Abrir menu"><span class="menu_icone-header"></span></button>
+                <ul class="list_header" role="menu">
+                    <li class="iten_header"><a href="#sobre" class="link_iten">Sobre</a></li>
+                    <li class="iten_header"><a href="#qualificacoes" class="link_iten">Qualificações</a></li>
+                    <li class="iten_header"><a href="#habilidades" class="link_iten">Habilidades</a></li>
+                    <li class="iten_header"><a href="#experiencia" class="link_iten">Experiências</a></li>
+                    <li class="iten_header"><a href="#projeto" class="link_iten">Projetos</a></li>
+                    <li class="iten_header"><a href="#contato" class="link_iten">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section_sobre" id="sobre">
+            <img src="img/Kewin.jpeg" class="foto_perfil" alt="Foto de Kewin">
+            <div class="container_sobre">
+                <p class="texto_destaque"><img src="img/arrow-rigth.png" class="arrow"> SOBRE MIM</p>
+                <h3 class="titulo_sobre">Administrador em Transição | DBA | Gestão de TI | Entusiasta de Front-End</h3>
+                <p class="descricao_sobre">Olá, meu nome é Kewin Shamir Xavier Ribeiro. Sou um profissional em transição
+                    para a área de Tecnologia da Informação, atualmente atuando como Técnico de TI no Detran-ES, em
+                    Vitória, Espírito Santo. Minha jornada profissional começou na área administrativa, onde adquiri uma
+                    visão estratégica e desenvolvi habilidades essenciais como planejamento, organização e foco em
+                    resultados.</p>
+                <p class="descricao_sobre">Meu objetivo é construir uma carreira sólida na área de TI, aplicando minhas
+                    habilidades analíticas e meu conhecimento administrativo para promover a eficácia organizacional e
+                    contribuir estrategicamente para o desenvolvimento tecnológico.</p>
+                <div class="container_button">
+                    <a href="document/Curriculo Kewin.pdf" download="CV Kewin" aria-label="Baixar curriculo de Vinícius"
+                        class="link">
+                        <button class="button_cv">Baixar CV <i class="fa-solid fa-download"></i></button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Qualificações -->
+        <section class="section_qualificacoes" id="qualificacoes">
+            <h2 class="titulo_projeto">Minhas Qualificações</h2>
+            <button class="menu-filtros" aria-label="Filtros de Categoria">
+                Filtros</button>
+            <div class="filtros-categorias">
+                <button class="filtro active" data-categoria="todos">Todos</button>
+                <button class="filtro" data-categoria="superior">Superior</button>
+                <button class="filtro" data-categoria="gestao">Gestão</button>
+                <button class="filtro" data-categoria="tecnologia">Tecnologia</button>
+                <button class="filtro" data-categoria="desenvolvimentop">Desenvolvimento Pessoal</button>
+                <button class="filtro" data-categoria="idiomas">Idiomas</button>
+            </div>
+            <div class="container-cursos">
+                <!-- Superior -->
+                <div class="card-curso superior">
+                    <i class="fa-solid fa-briefcase icone-curso"></i>
+                    <h3>Bacharel em Administração</h3>
+                    <p>UEMASUL - CONCLUIDO</p>
+                </div>
+                <div class="card-curso superior">
+                    <i class="fa-solid fa-database icone-curso"></i>
+                    <h3>Tecnólogo em Gestão de TI</h3>
+                    <p>Faculdade Multivix - Andamento
+                    </p>
+                </div>
+
+                <div class="card-curso superior">
+                    <i class="fa-solid fa-database icone-curso"></i>
+                    <h3>Pós-graduação em Administração de Banco de Dados</h3>
+                    <p>Faculdade Metropolitana - Andamento
+                    </p>
+                </div>
+
+                <div class="card-curso superior">
+                    <i class="fa-solid fa-database icone-curso"></i>
+                    <h3>Pós- Graduação em Ciência de Dados e Big Data</h3>
+                    <p>Faculdade Metropolitana - Andamento</p>
+                </div>
+                <div class="card-curso superior">
+                    <i class="fa-solid fa-database icone-curso"></i>
+                    <h3>MBA em Data Mining</h3>
+                    <p>Faculdade Metropolitana - Andamento</p>
+                </div>
+                <!-- Gestão -->
+                <div class="card-curso gestao">
+                    <i class="fa-solid fa-user-tie icone-curso"></i>
+                    <h3>Auxiliar Administrativo</h3>
+                    <p>SECTI - Concluido</p>
+                </div>
+
+                <div class="card-curso gestao">
+                    <i class="fa-solid fa-chart-line icone-curso"></i>
+                    <h3>Assistente de Faturamento</h3>
+                    <p>SECTI - Concluido</p>
+                </div>
+                <!-- Tecnologia -->
+                <div class="card-curso tecnologia">
+                    <i class="fa-brands fa-microsoft icone-curso"></i>
+                    <h3>Pacote Office</h3>
+                    <p>SENAC - Concluido</p>
+                </div>
+                <div class="card-curso tecnologia">
+                    <i class="fa-solid fa-file-excel icone-curso"></i>
+                    <h3>Excel Avançado</h3>
+                    <p>Fundação Bradesco - Concluido</p>
+                </div>
+                <div class="card-curso tecnologia">
+                    <i class="fa-solid fa-brain icone-curso"></i>
+                    <h3>Pensamento Computacional</h3>
+                    <p>Fundação Bradesco - Concluido</p>
+                </div>
+                <div class="card-curso tecnologia">
+                    <i class="fa-solid fa-database icone-curso"></i>
+                    <h3>Banco de Dados I - Fundamentos</h3>
+                    <p>IFRS - Concluido</p>
+                </div>
+                <div class="card-curso tecnologia">
+                    <i class="fa-solid fa-code icone-curso"></i>
+                    <h3>Trilha de HTML e CSS</h3>
+                    <p>Alura - Concluido</p>
+                </div>
+                <div class="card-curso tecnologia">
+                    <i class="fa-solid fa-brain icone-curso"></i>
+                    <h3>Trilha Lógica de Programação</h3>
+                    <p>Alura - Concluido</p>
+                </div>
+                <div class="card-curso tecnologia">
+                    <i class="fa-solid fa-code icone-curso"></i>
+                    <h3>Formação Iniciante em Programação</h3>
+                    <p>Alura - Concluido</p>
+                </div>
+                <div class="card-curso tecnologia">
+                    <i class="fa-solid fa-chart-line icone-curso"></i>
+                    <h3>ChatGPT: otimizando a qualidade dos resultados</h3>
+                    <p>Alura - Concluido</p>
+                </div>
+                <!-- Desenvolvimento Pessoal -->
+                <div class="card-curso desenvolvimentop">
+                    <i class="fa-solid fa-handshake icone-curso"></i>
+                    <h3>Atendimento ao Público</h3>
+                    <p>Fundação Bradesco - Concluido</p>
+                </div>
+                <div class="card-curso desenvolvimentop">
+                    <i class="fa-solid fa-bullseye icone-curso"></i>
+                    <h3>Foco: trazendo mais resultados para o dia a dia</h3>
+                    <p>Alura - Concluido</p>
+                </div>
+                <div class="card-curso desenvolvimentop">
+                    <i class="fa-solid fa-book icone-curso"></i>
+                    <h3>Hábitos: da produtividade às metas pessoais</h3>
+                    <p>Alura - Concluido</p>
+                </div>
+                <div class="card-curso desenvolvimentop">
+                    <i class="fa-solid fa-book-open icone-curso"></i>
+                    <h3>Aprender a aprender: técnicas para seu autodesenvolvimento</h3>
+                    <p>Alura - Concluido</p>
+                </div>
+                <div class="card-curso desenvolvimentop">
+                    <i class="fa-solid fa-rocket icone-curso"></i>
+                    <h3>Formação Desenvolvimento Pessoal</h3>
+                    <p>Alura</p>
+                </div>
+                <!-- Idiomas -->
+                <div class="card-curso idiomas">
+                    <i class="fa-solid fa-language icone-curso"></i>
+                    <h3>Inglês Nível 2</h3>
+                    <p>For4You English</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Habilidades -->
+        <section class="section_habilidades" id="habilidades">
+            <h2 class="titulo_projeto">Minhas Habilidades</h2>
+            <!-- Hard Skills -->
+            <div class="container-habilidades">
+                <h3 class="subtitulo">Hard Skills</h3>
+                <div class="hard-skills">
+                    <div class="grafico-habilidade">
+                        <div class="circulo-externo">
+                            <div class="circulo-interno">
+                                <i class="fa-brands fa-microsoft icone-habilidade"></i>
+                                <span class="porcentagem" data-level="85">0%</span>
+                            </div>
+                        </div>
+                        <p>Pacote Office</p>
+                    </div>
+
+                    <div class="grafico-habilidade">
+                        <div class="circulo-externo">
+                            <div class="circulo-interno">
+                                <i class="fa-solid fa-file-excel icone-habilidade"></i>
+                                <span class="porcentagem" data-level="85">0%</span>
+                            </div>
+                        </div>
+                        <p>Excel Avançado</p>
+                    </div>
+
+                    <div class="grafico-habilidade">
+                        <div class="circulo-externo">
+                            <div class="circulo-interno">
+                                <i class="fa-solid fa-database icone-habilidade"></i>
+                                <span class="porcentagem" data-level="65">0%</span>
+                            </div>
+                        </div>
+                        <p>Banco de Dados</p>
+                    </div>
+
+                    <div class="grafico-habilidade">
+                        <div class="circulo-externo">
+                            <div class="circulo-interno">
+                                <i class="fa-solid fa-code icone-habilidade"></i>
+                                <span class="porcentagem" data-level="70">0%</span>
+                            </div>
+                        </div>
+                        <p>Lógica de Programação</p>
+                    </div>
+
+                    <div class="grafico-habilidade">
+                        <div class="circulo-externo">
+                            <div class="circulo-interno">
+                                <i class="fa-solid fa-language icone-habilidade"></i>
+                                <span class="porcentagem" data-level="50">0%</span>
+                            </div>
+                        </div>
+                        <p>Inglês Nível 2</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="container-habilidades">
+                <h3 class="subtitulo">Soft Skills</h3>
+                <div class="soft-skills">
+                    <div class="item-soft-skill">
+                        <i class="fa-solid fa-bolt icone-soft-skill"></i>
+                        <p>Proatividade</p>
+                    </div>
+
+                    <div class="item-soft-skill">
+                        <i class="fa-solid fa-users icone-soft-skill"></i>
+                        <p>Trabalho em Equipe</p>
+                    </div>
+
+                    <div class="item-soft-skill">
+                        <i class="fa-solid fa-lightbulb icone-soft-skill"></i>
+                        <p>Resolução de Problemas</p>
+                    </div>
+
+                    <div class="item-soft-skill">
+                        <i class="fa-solid fa-calendar-check icone-soft-skill"></i>
+                        <p>Planejamento e Organização</p>
+                    </div>
+
+                    <div class="item-soft-skill">
+                        <i class="fa-solid fa-arrows-rotate icone-soft-skill"></i>
+                        <p>Adaptabilidade</p>
+                    </div>
+
+                    <div class="item-soft-skill">
+                        <i class="fa-solid fa-bullseye icone-soft-skill"></i>
+                        <p>Foco em Resultados</p>
+                    </div>
+
+                    <div class="item-soft-skill">
+                        <i class="fa-solid fa-user icone-soft-skill"></i>
+                        <p>Resiliência Profissional</p>
+                    </div>
+
+                    <div class="item-soft-skill">
+                        <i class="fa-solid fa-handshake icone-soft-skill"></i>
+                        <p>Atendimento ao Cliente</p>
+                    </div>
+
+                    <div class="item-soft-skill">
+                        <i class="fa-solid fa-gears icone-soft-skill"></i>
+                        <p>Gestão de Processos</p>
+                    </div>
+
+                    <div class="item-soft-skill">
+                        <i class="fa-solid fa-chart-line icone-soft-skill"></i>
+                        <p>Habilidades Analíticas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_experiencias" id="experiencia">
+            <header class="cabecalho_servico">
+                <h2 class="titulo">Minhas <span class="destaque">Experiências</span></h2>
+                <p class="descricao">Conheça um pouco da minha trajetória profissional.</p>
+            </header>
+            <div class="timeline-container">
+                <div class="timeline-item" data-modal="modal1">
+                    <i class="fas fa-laptop-code fa-2x"></i>
+                    <span>Julho, 2024 - Presente</span>
+                </div>
+                <div class="timeline-item" data-modal="modal2">
+                    <i class="fas fa-clipboard-list fa-2x"></i>
+                    <span>Janeiro, 2024 - Julho, 2024</span>
+                </div>
+                <div class="timeline-item" data-modal="modal3">
+                    <i class="fas fa-dolly fa-2x"></i>
+                    <span>Maio, 2018 - Agosto, 2023</span>
+                </div>
+            </div>
+
+            <!-- Modais -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Agente I (Técnico de TI)</h3>
+                    <h4>DETRAN|ES – Julho 2024 - Presente</h4>
+                    <p>Atualmente, ocupo o cargo de Técnico de TI no Detran-ES, na Subgerência de Suporte e Operações de
+                        TI (SGOS). Onde decidi realizar a transição de carreira para a área de Tecnologia da Informação,
+                        buscando aprimorar meus conhecimentos e contribuir de forma estratégica para o bom funcionamento
+                        do setor.</p>
+                    <ul>
+                        <li>• Suporte Técnico e Operações de TI: Atuação direta no suporte às operações tecnológicas do
+                            Detran-ES, garantindo o funcionamento contínuo e eficiente dos sistemas internoas e
+                            externos.</li>
+                        <li>• Gestão de Patrimônios Tecnológicos: Responsável pelo controle, inventário e gestão de
+                            ativos tecnológicos do setor, assegurando a integridade e a rastreabilidade dos
+                            equipamentos.</li>
+                        <li>• Elaboração de Estudos para Contratação: Colaboração na elaboração de estudos técnicos e
+                            orçamentários para a contratação de itens e soluções para a área de tecnologia, apoiando as
+                            decisões estratégicas e cumprindo as exigências legais e regulatórias.
+                        <li>• Atividades Administrativas: Execução de atividades administrativas relacionadas ao setor,
+                            como a organização de documentos e apoio na gestão de processos relacionados à
+                            infraestrutura tecnológica do Detran-ES.</li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Assistente Administrativo</h3>
+                    <h4>MGS - Jan a Jul/2024</h4>
+                    <p>MGS - Minas Gerais Administração e Serviços S.A.
+                        A MGS é uma empresa pública que atua na prestação de serviços para diversos órgãos e
+                        instituições públicas, com contratações realizadas mediante processo seletivo ou concurso
+                        público, assegurando a transparência e a meritocracia. Fui aprovado para atuar como Assistente
+                        Administrativo, sendo alocado no Detran-ES, onde desempenhei funções relevantes nos setores de
+                        Coordenação de Credenciamento (CCRED) e Gerência de Serviços Gerais (GESEG).</p>
+                    <ul>
+                        <li>• Realizei o processamento e acompanhamento de credenciamentos de empresas e profissionais
+                            vinculados a serviços de trânsito, assegurando conformidade com normas regulatórias.</li>
+                        <li>• Verifiquei e organizei documentos institucionais, garantindo legalidade e padronização nos
+                            processos administrativos.</li>
+                        <li>• Mantive atualizados os registros de entidades credenciadas, otimizando o acesso à
+                            informação para suporte à tomada de decisão.</li>
+                        <li>• Prestei suporte administrativo em rotinas como controle de correspondências, arquivos e
+                            atendimento interno.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Auxiliar Administrativo</h3>
+                    <h4>FS Distribuidora – 2018 a 2023</h4>
+                    <p>Durante minha trajetória no Grupo Feirão dos Móveis, onde iniciei como Jovem Aprendiz e tive a
+                        oportunidade de atuar em diversos setores da empresa, adquirindo uma visão ampla e estratégica
+                        do funcionamento organizacional. Com o tempo, minha atuação foi mais direcionada à área
+                        logística, onde desenvolvi habilidades fundamentais para operações eficientes.</p>
+                    <ul>
+                        <li>• Controle de Estoque: Auxílio na organização, conferência e reposição de mercadorias,
+                            garantindo precisão no inventário.</li>
+                        <li>• Gestão de Transportes: Apoio no planejamento e acompanhamento das entregas, otimizando
+                            rotas e prazos.</li>
+                        <li>• Apoio Administrativo: Atendimento a fornecedores, organização de documentos e suporte às
+                            rotinas administrativas de outros setores.</li>
+                        <li>• Análise de Processos Logísticos: Identificação de gargalos operacionais e sugestão de
+                            melhorias que contribuíram para o aumento da eficiência no setor.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_projetos" id="projeto">
+            <h2 class="titulo_projeto">Meus projetos</h2>
+            <div class="navegacao-projetos">
+                <button id="anterior" class="seta-anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="grade-projetos">
+                    <!-- Projetos serão inseridos dinamicamente via JSON -->
+                </div>
+                <button id="proximo" class="seta-proximo"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+
+        <section class="section_contato" id="contato">
+            <header class="cabecalho_contato">
+                <h2 class="titulo titulo_contato">Networking</h2>
+                <p class="descricao descricao_contato">Você pode conversar comigo diretamente através das minhas redes.
+                </p>
+            </header>
+            <div class="lista_rede">
+                <div class="item_rede">
+                    <a href="https://www.linkedin.com/in/kewin-shamir/" class="link" target="_blank"
+                        aria-label="Abrir Linkedin de Kewin">
+                        <i class="fa-brands fa-linkedin icon"></i> Linkedin
+                        <i class="fa-solid fa-check check"></i>
+                    </a>
+                </div>
+                <div class="item_rede">
+                    <a href="https://github.com/KewinShamir/" class="link" target="_blank"
+                        aria-label="Abrir Github de Kewin">
+                        <i class="fa-brands fa-github icon"></i> Github
+                        <i class="fa-solid fa-check check"></i>
+                    </a>
+                </div>
+                <div class="item_rede">
+                    <a href="https://www.instagram.com/kewinshamir_" class="link" target="_blank"
+                        aria-label="Abrir Instagram de Kewin">
+                        <i class="fa-brands fa-instagram icon"></i> Instagram
+                        <i class="fa-solid fa-check check"></i>
+                    </a>
+                </div>
+                <div class="item_rede">
+                    <a href="https://t.me/kewinshamir" class="link" target="_blank"
+                        aria-label="Abrir telegram de Kewin">
+                        <i class="fa-brands fa-telegram icon"></i> Telegram
+                        <i class="fa-solid fa-check check"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="titulo">2025 © Kewin Shamir. Todos os direitos reservados.</h2>
+    </footer>
+    <button id="btn-subir" title="Voltar ao Topo">↑</button>
+    <script src="https://kit.fontawesome.com/b4aee6e34b.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/experiencias.js"></script>
+    <script src="js/projetos.js"></script>
+    <script src="js/btn.js"></script>
+</body>
+
+</html>

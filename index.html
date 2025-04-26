@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kewin Shamir | Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800&&family=Inter:wght@500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<style>
+    :root {
+        --font-inter: 'Inter', sans-serif;
+        --font-barlow: 'Barlow', sans-serif;
+        --font-poppins: 'Poppins', sans-serif;
+        --ciano-default-color: #00e7f9;
+        --ciano-hover: #00b4c1;
+        --blue-dark-color: #0F1116;
+        --white: rgb(250, 250, 250);
+        --black: #000000;
+        --black-100: #0d0d0d;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    html {
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-size: 1.6rem;
+        font-family: var(--font-barlow);
+        background: radial-gradient(circle at center, #0a0a0a 0%, #00b4c1 100%);
+        overflow-x: hidden;
+        transition: background 0.5s ease-in-out;
+        position: relative;
+    }
+
+    .section_main {
+        padding: 20rem 0 11rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    .section_main::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: url('https://cdn.pixabay.com/photo/2020/10/09/08/35/stars-5640719_1280.jpg') no-repeat center center/cover;
+        animation: backgroundMove 30s linear infinite;
+        opacity: 0.05;
+    }
+
+    .container_main {
+        text-align: center;
+        color: var(--white);
+    }
+
+    .destaque_main {
+        display: inline;
+        font-family: var(--font-poppins);
+        background-color: var(--blue-dark-color);
+        color: var(--white);
+        border-radius: .4rem;
+        padding: .8rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-shadow: 0 0 1rem rgba(255, 255, 255, 0.05);
+    }
+
+    .titulo_main {
+        font-family: var(--font-poppins);
+        font-weight: 100;
+        font-size: 5rem;
+        margin-top: 1rem;
+        text-shadow: 0 0 1rem rgba(255, 255, 255, 0.05);
+    }
+
+    .cargo_main {
+        font-family: var(--font-inter);
+        font-weight: 600;
+        font-size: 7.5rem;
+        letter-spacing: .1rem;
+        text-shadow: 0 0 1rem rgba(255, 255, 255, 0.05);
+    }
+
+    .descricao_main {
+        font-family: var(--font-poppins);
+        font-weight: 300;
+        font-size: 1.4rem;
+        max-width: 45rem;
+        margin: 1rem auto 3rem auto;
+    }
+
+    .button {
+        width: 27rem;
+        height: 4rem;
+        border-radius: .5rem;
+        background-color: var(--ciano-default-color);
+        color: var(--black);
+        font-weight: 600;
+        cursor: pointer;
+        transition: all .3s;
+        box-shadow: 0 0 1.5rem rgba(0, 231, 249, 0.4);
+        margin-bottom: 1rem;
+    }
+
+    .button:hover {
+        background-color: var(--ciano-hover);
+    }
+
+    .navigation_main .list_main {
+        display: flex;
+        gap: 2rem;
+        margin-top: 10rem;
+        justify-content: center;
+    }
+
+    .list_main .iten_main .link .icons {
+        font-size: 3rem;
+        transition: all .3s;
+        color: var(--white);
+    }
+
+    .list_main .iten_main .link .icons:hover {
+        color: var(--ciano-default-color);
+    }
+
+    @keyframes backgroundMove {
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: 100% 100%;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .titulo_main {
+            font-size: 3rem;
+        }
+
+        .cargo_main {
+            font-size: 5rem;
+        }
+    }
+
+    @media (max-width: 620px) {
+        .cargo_main {
+            font-size: 3.5rem;
+        }
+    }
+
+    @media (max-width: 430px) {
+        html {
+            font-size: 60%;
+        }
+
+        .descricao_main {
+            font-size: 1.4rem;
+            max-width: 90%;
+        }
+
+        .cargo_main {
+            font-size: 2.8rem;
+        }
+    }
+</style>
+
+<body>
+    <main>
+        <section class="section_main" id="principal">
+            <div class="container_main">
+                <p class="destaque_main">Tecnologia como um ativo</p>
+                <h2 class="titulo_main">Olá, eu sou</h2>
+                <p class="cargo_main">Kewin Shamir</p>
+                <p class="descricao_main">Fico feliz em vê-lo (a) por aqui. Espero que aproveite o conteúdo e que eu
+                    possa te ajudar de alguma forma.</p>
+                <a href="/Conteudo].html"><button class="button">Conhecer mais</button></a>
+            </div>
+            <nav class="navigation_main">
+                <ul class="list_main">
+                    <li class="iten_main"><a href="https://www.instagram.com/kewinshamir_" class="link" target="_blank"
+                            aria-label="Visitar Instagram de Kewin"><i class="fa-brands fa-instagram icons"></i></a>
+                    </li>
+                    <li class="iten_main"><a href="https://github.com/KewinShamir/" class="link" target="_blank"
+                            aria-label="Visitar Github de Kewin"><i class="fa-brands fa-github icons"></i></a></li>
+                    <li class="iten_main"><a href="https://www.linkedin.com/in/kewin-shamir/" class="link"
+                            target="_blank" aria-label="Visitar Linkedin de Kewin"><i
+                                class="fa-brands fa-linkedin icons"></i></a></li>
+                    <li class="iten_main"><a href="https://t.me/kewinshamir" class="link" target="_blank"
+                            aria-label="Visitar Telegram de Kewin"><i class="fa-brands fa-telegram icons"></i></a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <script>
+        // Animações cinematográficas com GSAP
+        window.addEventListener('load', () => {
+            gsap.from('.container_main', {
+                duration: 2,
+                opacity: 0,
+                y: 100,
+                ease: 'power4.out'
+            });
+
+            gsap.from('.list_main li', {
+                duration: 1,
+                opacity: 0,
+                y: 20,
+                stagger: 0.3,
+                delay: 1.5,
+                ease: 'power2.out'
+            });
+        });
+
+        // Efeito spotlight com o mouse
+        document.body.addEventListener('mousemove', (e) => {
+            document.body.style.background = `radial-gradient(circle at ${e.clientX}px ${e.clientY}px, #0a0a0a 0%, #00b4c1 100%)`;
+        });
+    </script>
+</body>
+
+</html>
