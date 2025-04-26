@@ -75,7 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
     // Executa a animação ao carregar a página
     animarGraficos();
 });
