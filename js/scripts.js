@@ -53,12 +53,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Função para animar os gráficos
     function animarGraficos() {
         graficos.forEach((grafico) => {
+            // Se o gráfico já foi animado, não faz nada
+            if (grafico.classList.contains('animado')) return;
+
             if (isElementInViewport(grafico)) {
                 const porcentagemElement = grafico.querySelector('.porcentagem');
                 const nivel = parseInt(porcentagemElement.getAttribute('data-level'), 10);
+                const circuloExterno = grafico.querySelector('.circulo-externo');
                 let contador = 0;
 
-                // Animação da porcentagem
                 const intervalo = setInterval(() => {
                     if (contador <= nivel) {
                         porcentagemElement.textContent = `${contador}%`;
@@ -66,15 +69,17 @@ document.addEventListener('DOMContentLoaded', () => {
                         contador++;
                     } else {
                         clearInterval(intervalo);
+                        // Adiciona a classe para evitar animação futura
+                        grafico.classList.add('animado');
                     }
                 }, 20);
-
-                // Animação do gráfico circular
-                const circuloExterno = grafico.querySelector('.circulo-externo');
-                circuloExterno.style.background = `conic-gradient(var(--ciano-default-color) ${nivel}%, var(--black-100) ${nivel}%)`;
             }
         });
     }
+
+    // Verifica a visibilidade ao rolar a página
+    window.addEventListener('scroll', animarGraficos);
+
     // Executa a animação ao carregar a página
     animarGraficos();
 });
